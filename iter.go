@@ -18,8 +18,8 @@ import(
 	"fmt"
 )
 
-func about(){
-  fmt.Println(" I'm testing out importing 3-Party Packages into the GOPlayGround \n so GO Scottie GO :-D ")
+func about(description string){
+  fmt.Println("Hey, "+description+" I'm testing out importing 3-Party Packages into the GOPlayGround \n so GO Scottie GO :-D ")
 }
 
 // N returns a slice of n 0-sized elements, suitable for ranging over.
@@ -32,8 +32,13 @@ func about(){
 //
 // ... will print 0 to 9, inclusive.
 //
-// It does not cause any allocations.
+//==It does not cause any allocations.
 func N(n int) []struct{} {
+	fmt.Println("..in N()")
+	return make([]struct{}, n)
+}
+//==It does not cause any allocations.
+func F(n int) []struct{} {
 	fmt.Println("..in N()")
 	return make([]struct{}, n)
 }
