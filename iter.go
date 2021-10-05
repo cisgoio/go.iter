@@ -39,6 +39,6 @@ func N(n int) []struct{} {
 }
 //==It does not cause any allocations.
 func F(n int) []struct{} {
-	fmt.Println("..in N()")
+	fmt.Println("..in F()")
 	return make([]struct{}, n)
 }
