@@ -8,8 +8,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/bradfitz/iter"
+	"github.com/cisgoio/go.iter"
 )
+
+//REF: "github.com/bradfitz/iter"
 
 func ExampleN() {
 	for i := range iter.N(4) {
