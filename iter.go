@@ -14,13 +14,13 @@
 // representation of Go slices and why it doesn't allocate.
 package iter
 
-import(
-	"fmt"
-)
+//import(
+//	"fmt"
+//)
 
-func about(description string){
-  fmt.Println("Hey, "+description+" I'm testing out importing 3-Party Packages into the GOPlayGround \n so GO Scottie GO :-D ")
-}
+//func about(description string){
+//  fmt.Println("Hey, "+description+" I'm testing out importing 3-Party Packages into the GOPlayGround \n so GO Scottie GO :-D ")
+//}
 
 // N returns a slice of n 0-sized elements, suitable for ranging over.
 //
