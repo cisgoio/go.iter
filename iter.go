@@ -34,5 +34,6 @@ func about(){
 //
 // It does not cause any allocations.
 func N(n int) []struct{} {
+	fmt.Println("..in N()")
 	return make([]struct{}, n)
 }
